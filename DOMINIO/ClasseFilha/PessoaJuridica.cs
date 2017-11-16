@@ -1,7 +1,10 @@
-namespace DOMINIO.ClasseFilha
+using Pessoa; 
+
+namespace DOMINIO.ClassePai.ClasseFilha
 {
-    public class PessoaJuridica
+    public class PessoaJuridica : Pessoa
     {
+        public string RazaoSocial { get; set; }
         
     }
 }

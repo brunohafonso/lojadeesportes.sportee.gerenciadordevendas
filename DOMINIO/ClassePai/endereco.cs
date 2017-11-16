@@ -10,6 +10,7 @@ namespace DOMINIO
 
         public string Complemento { get; set; }
         
+        public string Cep { get; set; }
         
     }
 }

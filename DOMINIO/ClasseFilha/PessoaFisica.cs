@@ -1,11 +1,16 @@
 using Pessoa;
 
-namespace DOMINIO.ClasseFilha
+namespace DOMINIO.ClassePai.ClasseFilha
 {
     public class PessoaFisica : Pessoa
     {
         private string Nome { get; set; }
-        public string MyProperty { get; set; }
+        private string CPF { get; set; }
+
+        public PessoaFisica(string Telefone)
+        {
+            base.Telefone = Telefone;
+        }
         
     }
 }

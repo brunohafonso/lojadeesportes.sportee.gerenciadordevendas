@@ -1,13 +1,16 @@
 ﻿using System;
 
-namespace DOMINIO
+namespace DOMINIO.ClassePai
 {
-    public class Pessoa
+    public abstract class Pessoa
     {
-        private string   Documento { get; set; }
+        protected string  Documento { get; set; }
         
-        private Endereco Endereco {get; set;}
+        protected Endereco Endereco {get; set;}
 
+        protected string Email { get; set; }
         
+        protected string Telefone { get; set; }
+
     }
 }
