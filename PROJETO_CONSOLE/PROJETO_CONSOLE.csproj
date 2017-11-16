@@ -4,6 +4,9 @@
     <ProjectReference Include="c:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\DOMINIO.csproj" />
     <ProjectReference Include="c:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\REPOSITORIO.csproj" />
     <ProjectReference Include="c:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\UTIL\UTIL.csproj" />
+    <ProjectReference Include="c:\Users\43719121844\Desktop\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\DOMINIO.csproj" />
+    <ProjectReference Include="c:\Users\43719121844\Desktop\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\REPOSITORIO.csproj" />
+    <ProjectReference Include="c:\Users\43719121844\Desktop\lojadeesportes.sportee.gerenciadordevendas\UTIL\UTIL.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
