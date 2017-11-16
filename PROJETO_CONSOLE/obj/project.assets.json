@@ -196,6 +196,36 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "DOMINIO/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/DOMINIO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DOMINIO.dll": {}
+        }
+      },
+      "REPOSITORIO/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/REPOSITORIO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/REPOSITORIO.dll": {}
+        }
+      },
+      "UTIL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/UTIL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UTIL.dll": {}
+        }
       }
     }
   },
@@ -656,31 +686,49 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "DOMINIO/1.0.0": {
+      "type": "project",
+      "path": "../DOMINIO/DOMINIO.csproj",
+      "msbuildProject": "../DOMINIO/DOMINIO.csproj"
+    },
+    "REPOSITORIO/1.0.0": {
+      "type": "project",
+      "path": "../REPOSITORIO/REPOSITORIO.csproj",
+      "msbuildProject": "../REPOSITORIO/REPOSITORIO.csproj"
+    },
+    "UTIL/1.0.0": {
+      "type": "project",
+      "path": "../UTIL/UTIL.csproj",
+      "msbuildProject": "../UTIL/UTIL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.NETCore.App >= 2.0.0"
+      "DOMINIO >= 1.0.0",
+      "Microsoft.NETCore.App >= 2.0.0",
+      "REPOSITORIO >= 1.0.0",
+      "UTIL >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\43719121844\\.nuget\\packages\\": {},
+    "C:\\Users\\44063076806\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\43719121844\\Desktop\\lojadeesportes.sportee.gerenciadordevendas\\PROJETO_CONSOLE\\PROJETO_CONSOLE.csproj",
+      "projectUniqueName": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\PROJETO_CONSOLE\\PROJETO_CONSOLE.csproj",
       "projectName": "PROJETO_CONSOLE",
-      "projectPath": "c:\\Users\\43719121844\\Desktop\\lojadeesportes.sportee.gerenciadordevendas\\PROJETO_CONSOLE\\PROJETO_CONSOLE.csproj",
-      "packagesPath": "C:\\Users\\43719121844\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\43719121844\\Desktop\\lojadeesportes.sportee.gerenciadordevendas\\PROJETO_CONSOLE\\obj\\",
+      "projectPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\PROJETO_CONSOLE\\PROJETO_CONSOLE.csproj",
+      "packagesPath": "C:\\Users\\44063076806\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\PROJETO_CONSOLE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\43719121844\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\44063076806\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -690,7 +738,17 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj": {
+              "projectPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj"
+            },
+            "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\REPOSITORIO\\REPOSITORIO.csproj": {
+              "projectPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\REPOSITORIO\\REPOSITORIO.csproj"
+            },
+            "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\UTIL\\UTIL.csproj": {
+              "projectPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\UTIL\\UTIL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
