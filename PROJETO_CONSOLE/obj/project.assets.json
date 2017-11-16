@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\55349862120\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\PROJETO_CONSOLE\\PROJETO_CONSOLE.csproj",
+      "projectUniqueName": "C:\\Users\\55349862120\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\projeto_console\\PROJETO_CONSOLE.csproj",
       "projectName": "PROJETO_CONSOLE",
-      "projectPath": "c:\\Users\\55349862120\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\PROJETO_CONSOLE\\PROJETO_CONSOLE.csproj",
+      "projectPath": "C:\\Users\\55349862120\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\projeto_console\\PROJETO_CONSOLE.csproj",
       "packagesPath": "C:\\Users\\55349862120\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\55349862120\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\PROJETO_CONSOLE\\obj\\",
+      "outputPath": "C:\\Users\\55349862120\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\projeto_console\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
