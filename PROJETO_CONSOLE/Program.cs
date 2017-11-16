@@ -6,7 +6,7 @@ namespace PROJETO_CONSOLE
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+           
         }
     }
 }
