@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace UTIL
 {
@@ -121,7 +122,6 @@ namespace UTIL
         }
 
         public string validar_email(string email) {
-            System.Console.WriteLine("digite seu email");
             // mascara a ser aplicada
             Regex regex = new Regex(@"(\w+)(@)(\w+)(.)(\w+)");
             //texto a ser vaidado
@@ -136,9 +136,7 @@ namespace UTIL
             //System.Console.WriteLine(match.Value);
             return match.Value; 
         }
-        public string validar_cep() {
-            System.Console.WriteLine("digite seu cep com traço: EX.: 12345-123");
-            string cep = Console.ReadLine();
+        public string validar_cep(string cep) {
             while(cep.Length != 9) {
                 System.Console.WriteLine("digite seu cep com traço: EX.: 12345-123");
                 cep = Console.ReadLine();
