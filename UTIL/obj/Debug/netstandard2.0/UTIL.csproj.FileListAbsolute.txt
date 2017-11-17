@@ -1,0 +1,8 @@
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\UTIL\bin\Debug\netstandard2.0\UTIL.deps.json
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\UTIL\bin\Debug\netstandard2.0\UTIL.dll
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\UTIL\bin\Debug\netstandard2.0\UTIL.pdb
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\UTIL\obj\Debug\netstandard2.0\UTIL.csproj.CoreCompileInputs.cache
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\UTIL\obj\Debug\netstandard2.0\UTIL.AssemblyInfoInputs.cache
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\UTIL\obj\Debug\netstandard2.0\UTIL.AssemblyInfo.cs
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\UTIL\obj\Debug\netstandard2.0\UTIL.dll
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\UTIL\obj\Debug\netstandard2.0\UTIL.pdb

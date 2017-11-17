@@ -1,0 +1,8 @@
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.csproj.CoreCompileInputs.cache
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.AssemblyInfoInputs.cache
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.AssemblyInfo.cs
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\bin\Debug\netstandard2.0\DOMINIO.deps.json
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\bin\Debug\netstandard2.0\DOMINIO.dll
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\bin\Debug\netstandard2.0\DOMINIO.pdb
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.dll
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.pdb
