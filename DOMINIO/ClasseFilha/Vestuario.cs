@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DOMINIO.ClassePai.ClasseFilha
 {
-    public class Vestuario : Produto
+    public class Vestuario : Produto, IAcao
     {
         private string Tamanho { get; set; }
         private string Cor { get; set; }
@@ -22,38 +22,14 @@ namespace DOMINIO.ClassePai.ClasseFilha
             this.Tamanho = Tamanho;
             this.Cor = Cor;            
         }
-
-         public override bool CadastrarProduto() 
-        {
-            bool cadastrado = false;
-            StreamWriter arquivo = null;
-
-            try
-            {
-                arquivo = new StreamWriter("vestuario.csv", true);
-                arquivo.WriteLine(Id + ";" + Nome + ";" + Descricao + ";" + Preco + ";" + Tamanho + ";" + Cor);
-                cadastrado = true;
-            }
-            catch (Exception ex){
-                throw new Exception("Erro ao tentar gravar o arquivo." + ex.Message);
-            }
-            finally
-            {
-                arquivo.Close();
-            }
-
-            return cadastrado;
-            
-        }
-
-        public override string ConsultarProduto(int Id)
+        public string ConsultarProduto(int Id)
         {
             string resultado = "";
             StreamReader ler = null;
 
             try
             {
-                ler = new StreamReader("vestuario.csv", Encoding.Default);
+                ler = new StreamReader(@"..\REPOSITORIO\vestuario.csv", Encoding.Default);
                 string linha = "";
                 while((linha = ler.ReadLine()) != null){
                     string[] dados = linha.Split(';');
@@ -77,5 +53,31 @@ namespace DOMINIO.ClassePai.ClasseFilha
             return resultado;
         }
 
+        public string Cadastrar()
+        {
+            string cadastrado;
+            StreamWriter arquivo = null;
+
+            try
+            {
+                arquivo = new StreamWriter(@"..\REPOSITORIO\vestuario.csv", true);
+                arquivo.WriteLine(Id + ";" + Nome + ";" + Descricao + ";" + Preco + ";" + Tamanho + ";" + Cor);
+                cadastrado = "cadastrado com sucesso";
+            }
+            catch (Exception ex){
+                throw new Exception("Erro ao tentar gravar o arquivo." + ex.Message);
+            }
+            finally
+            {
+                arquivo.Close();
+            }
+
+            return cadastrado;
+        }
+
+        public string Consultar()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DOMINIO.ClassePai.ClasseFilha
 {
-    public class MaterialEsportivo : Produto
+    public class MaterialEsportivo : Produto, IAcao
     {
         private string Modalidade { get; set; }
 
@@ -20,16 +20,16 @@ namespace DOMINIO.ClassePai.ClasseFilha
             this.Modalidade = Modalidade;
         }
 
-          public override bool CadastrarProduto() 
+        public string Cadastrar()
         {
-            bool cadastrado = false;
+            string cadastrado;
             StreamWriter arquivo = null;
 
             try
             {
-                arquivo = new StreamWriter("material-esportivo.csv", true);
+                arquivo = new StreamWriter(@"..\REPOSITORIO\material-esportivo.csv", true);
                 arquivo.WriteLine(Id + ";" + Nome + ";" + Descricao + ";" + Preco + ";" + Modalidade);
-                cadastrado = true;
+                cadastrado = "cadastrado com sucesso";
             }
             catch (Exception ex){
                 throw new Exception("Erro ao tentar gravar o arquivo." + ex.Message);
@@ -43,14 +43,19 @@ namespace DOMINIO.ClassePai.ClasseFilha
             
         }
 
-         public override string ConsultarProduto(int Id)
+        public string Consultar()
+        {
+            throw new NotImplementedException();
+        }
+
+        /*public override string ConsultarProduto(int Id)
         {
             string resultado = "";
             StreamReader ler = null;
 
             try
             {
-                ler = new StreamReader("material-esportivo.csv", Encoding.Default);
+                ler = new StreamReader(@"..\REPOSITORIO\material-esportivo.csv", Encoding.Default);
                 string linha = "";
                 while((linha = ler.ReadLine()) != null){
                     string[] dados = linha.Split(';');
@@ -73,7 +78,12 @@ namespace DOMINIO.ClassePai.ClasseFilha
 
             return resultado;
         }
+
+        public string Consultar()
+        {
+            throw new NotImplementedException();
+        }
+    }*/
+
     }
-
-
 }
