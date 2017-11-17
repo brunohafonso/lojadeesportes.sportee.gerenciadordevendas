@@ -1,8 +1,11 @@
-namespace DOMINIO.ClassePai.ClasseFilha
+
+using DOMINIO.ClassePai;
+
+namespace DOMINIO.ClasseFilha
 {
     public class PessoaFisica : Pessoa,IAcao
     {
-        private string Nome { get; set; }
+        private  string Nome { get; set; }
         private string CPF { get; set; }
 
         public PessoaFisica()

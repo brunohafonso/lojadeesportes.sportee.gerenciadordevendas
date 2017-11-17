@@ -177,33 +177,23 @@
     ]
   },
   "packageFolders": {
-
-
-    "C:\\Users\\44063076806\\.nuget\\packages\\": {},
-
+    "C:\\Users\\43719121844\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-
-
-      "projectUniqueName": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj",
+      "projectUniqueName": "c:\\Users\\43719121844\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj",
       "projectName": "DOMINIO",
-      "projectPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj",
-      "packagesPath": "C:\\Users\\44063076806\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\obj\\",
-
+      "projectPath": "c:\\Users\\43719121844\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj",
+      "packagesPath": "C:\\Users\\43719121844\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\43719121844\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-
-
-        "C:\\Users\\44063076806\\AppData\\Roaming\\NuGet\\NuGet.Config"
-
-
+        "C:\\Users\\43719121844\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -239,5 +229,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file c:\\Users\\43719121844\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\obj\\DOMINIO.csproj.nuget.cache : After parsing a value an unexpected character was encountered: \". Path 'dgSpecHash', line 6, position 2."
+    }
+  ]
 }

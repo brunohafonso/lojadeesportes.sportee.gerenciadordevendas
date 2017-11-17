@@ -1,10 +1,13 @@
-namespace DOMINIO.ClassePai.ClasseFilha
+
+using DOMINIO.ClassePai;
+
+namespace DOMINIO.ClasseFilha
 {
     public class PessoaJuridica : Pessoa,IAcao
     {
-        private string RazaoSocial { get; set; }
+        protected string RazaoSocial { get; set; }
 
-        private string CNPJ { get; set; }
+        protected string CNPJ { get; set; }
 
         public PessoaJuridica()
         {
@@ -18,11 +21,13 @@ namespace DOMINIO.ClassePai.ClasseFilha
           base.Endereco = Endereco;
           base.Email = Email;
           base.Telefone = Telefone;
+          
         }
 
         public string Cadastrar()
         {
-            return null;
+              return null;
+          
         }
 
         public string Consultar()

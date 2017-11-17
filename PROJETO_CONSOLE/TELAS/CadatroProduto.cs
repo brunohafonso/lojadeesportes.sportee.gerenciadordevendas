@@ -5,7 +5,7 @@ namespace PROJETO_CONSOLE
    public class CadastroProduto
     {
        
-        static void Linha()
+       public  static void Linha()
         {
             Console.Write("======================================================");
         }
