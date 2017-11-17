@@ -1,6 +1,6 @@
 namespace DOMINIO
 {
-    interface IPessoa
+    interface IAcao
     {
         string Cadastrar();
 

@@ -1,6 +1,6 @@
 namespace DOMINIO.ClassePai.ClasseFilha
 {
-    public class PessoaJuridica : Pessoa,IPessoa
+    public class PessoaJuridica : Pessoa,IAcao
     {
         private string RazaoSocial { get; set; }
 
