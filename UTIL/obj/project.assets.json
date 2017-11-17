@@ -177,7 +177,9 @@
     ]
   },
   "packageFolders": {
+
     "C:\\Users\\44063076806\\.nuget\\packages\\": {},
+
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -188,12 +190,15 @@
       "projectPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\UTIL\\UTIL.csproj",
       "packagesPath": "C:\\Users\\44063076806\\.nuget\\packages\\",
       "outputPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\UTIL\\obj\\",
+
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+
         "C:\\Users\\44063076806\\AppData\\Roaming\\NuGet\\NuGet.Config"
+
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

@@ -712,23 +712,29 @@
     ]
   },
   "packageFolders": {
+
     "C:\\Users\\44063076806\\.nuget\\packages\\": {},
+
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+
       "projectUniqueName": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\PROJETO_CONSOLE\\PROJETO_CONSOLE.csproj",
       "projectName": "PROJETO_CONSOLE",
       "projectPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\PROJETO_CONSOLE\\PROJETO_CONSOLE.csproj",
       "packagesPath": "C:\\Users\\44063076806\\.nuget\\packages\\",
       "outputPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\PROJETO_CONSOLE\\obj\\",
+
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+
         "C:\\Users\\44063076806\\AppData\\Roaming\\NuGet\\NuGet.Config"
+
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -739,6 +745,7 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
+
             "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj": {
               "projectPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj"
             },
@@ -747,6 +754,7 @@
             },
             "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\UTIL\\UTIL.csproj": {
               "projectPath": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\UTIL\\UTIL.csproj"
+
             }
           }
         }
