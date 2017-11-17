@@ -178,6 +178,7 @@
   },
   "packageFolders": {
 
+
     "C:\\Users\\44063076806\\.nuget\\packages\\": {},
 
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
@@ -185,6 +186,7 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+
 
       "projectUniqueName": "c:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj",
       "projectName": "DOMINIO",
@@ -198,7 +200,9 @@
       ],
       "configFilePaths": [
 
+
         "C:\\Users\\44063076806\\AppData\\Roaming\\NuGet\\NuGet.Config"
+
 
       ],
       "originalTargetFrameworks": [
