@@ -1,0 +1,8 @@
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\bin\Debug\netstandard2.0\REPOSITORIO.deps.json
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\bin\Debug\netstandard2.0\REPOSITORIO.dll
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\bin\Debug\netstandard2.0\REPOSITORIO.pdb
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.csproj.CoreCompileInputs.cache
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.AssemblyInfoInputs.cache
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.AssemblyInfo.cs
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.dll
+c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.pdb
