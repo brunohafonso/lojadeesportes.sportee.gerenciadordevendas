@@ -1,6 +1,6 @@
 using System;
 
-namespace DOMINIO
+namespace DOMINIO.ClassePai
 {
     public class Endereco
     {
