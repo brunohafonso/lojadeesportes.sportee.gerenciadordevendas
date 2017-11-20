@@ -177,28 +177,30 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\43719121844\\.nuget\\packages\\": {},
+    "C:\\Users\\bruno afonso\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\43719121844\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\UTIL\\UTIL.csproj",
+      "projectUniqueName": "C:\\Users\\bruno afonso\\Desktop\\projeto_sportee\\lojadeesportes.sportee.gerenciadordevendas\\UTIL\\UTIL.csproj",
       "projectName": "UTIL",
-      "projectPath": "c:\\Users\\43719121844\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\UTIL\\UTIL.csproj",
-      "packagesPath": "C:\\Users\\43719121844\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\43719121844\\Documents\\lojadeesportes.sportee.gerenciadordevendas\\UTIL\\obj\\",
+      "projectPath": "C:\\Users\\bruno afonso\\Desktop\\projeto_sportee\\lojadeesportes.sportee.gerenciadordevendas\\UTIL\\UTIL.csproj",
+      "packagesPath": "C:\\Users\\bruno afonso\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bruno afonso\\Desktop\\projeto_sportee\\lojadeesportes.sportee.gerenciadordevendas\\UTIL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\43719121844\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\bruno afonso\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

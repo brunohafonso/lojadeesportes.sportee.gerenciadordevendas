@@ -1,4 +1,3 @@
-
 using DOMINIO.ClassePai;
 using System.IO;
 
@@ -26,19 +25,16 @@ namespace DOMINIO.ClasseFilha
           base.Endereco = Endereco;
           base.Email = Email;
           base.Telefone = Telefone;
-          this.Produto=Produto;
+          this.Produto = Produto;
 
         }
     
 
-        public string Cadastrar(string RazaoSocial, string CNPJ, Endereco Endereco, string Email, string Telefone, string Produt)
+        public bool Cadastrar()
         {
 
-           StreamWriter SalvarFornecedor=new StreamWriter("Fornecedores.csv",true);
-        
-
-
-            return null;
+           StreamWriter SalvarFornecedor = new StreamWriter(@"..\REPOSITORIO\Fornecedores.csv",true);
+           return false;
         }
 
         public string Consultar()

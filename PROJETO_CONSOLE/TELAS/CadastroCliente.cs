@@ -7,7 +7,7 @@ namespace PROJETO_CONSOLE {
     public static void Cadastro()
     {
 
-        CadastroProduto.Linha(); 
+        //Linha(); 
 
    }
 

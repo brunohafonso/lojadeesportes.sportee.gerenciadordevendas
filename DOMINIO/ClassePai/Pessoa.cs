@@ -9,6 +9,5 @@ namespace DOMINIO.ClassePai
         protected string Email { get; set; }
         
         protected string Telefone { get; set; }
-        protected string Tipo { get; set; }
     }
 }

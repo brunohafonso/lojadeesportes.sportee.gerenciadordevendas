@@ -3,7 +3,7 @@ using DOMINIO.ClassePai;
 
 namespace DOMINIO.ClasseFilha
 {
-    public class PessoaJuridica : Pessoa,IAcao
+    public class PessoaJuridica : Pessoa
     {
         protected string RazaoSocial { get; set; }
 
@@ -22,17 +22,6 @@ namespace DOMINIO.ClasseFilha
           base.Email = Email;
           base.Telefone = Telefone;
           
-        }
-
-        public string Cadastrar()
-        {
-              return null;
-          
-        }
-
-        public string Consultar()
-        {
-            return null;
         }
     }
 }

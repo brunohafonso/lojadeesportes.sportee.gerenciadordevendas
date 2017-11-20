@@ -20,19 +20,20 @@ namespace DOMINIO.ClassePai.ClasseFilha
             this.Modalidade = Modalidade;
         }
 
-        public string Cadastrar()
+        public bool Cadastrar()
         {
-            string cadastrado;
+            bool cadastrado;
             StreamWriter arquivo = null;
 
             try
             {
                 arquivo = new StreamWriter(@"..\REPOSITORIO\material-esportivo.csv", true);
                 arquivo.WriteLine(Id + ";" + Nome + ";" + Descricao + ";" + Preco + ";" + Modalidade);
-                cadastrado = "cadastrado com sucesso";
+                cadastrado = true;
             }
             catch (Exception ex){
                 throw new Exception("Erro ao tentar gravar o arquivo." + ex.Message);
+                cadastrado = false;
             }
             finally
             {

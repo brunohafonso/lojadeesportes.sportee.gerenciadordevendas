@@ -3,7 +3,7 @@ using DOMINIO.ClassePai;
 
 namespace DOMINIO.ClasseFilha
 {
-    public class PessoaFisica : Pessoa,IAcao
+    public class PessoaFisica : Pessoa
     {
         private  string Nome { get; set; }
         private string CPF { get; set; }
@@ -20,16 +20,6 @@ namespace DOMINIO.ClasseFilha
            base.Endereco = Endereco;
            base.Email = Email;
            base.Telefone = Telefone; 
-        }
-
-        public string Cadastrar() 
-        {
-            return null;
-        }
-
-        public string Consultar()
-        {
-            return null;
         }
     }
 }
