@@ -37,9 +37,9 @@ namespace DOMINIO.ClasseFilha
            return false;
         }
 
-        public string Consultar()
+        public string Consultar(string Path)
         {
-            return null;
+            
         }
     }
 }

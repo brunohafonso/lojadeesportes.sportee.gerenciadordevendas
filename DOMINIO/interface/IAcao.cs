@@ -4,6 +4,6 @@ namespace DOMINIO
     {
         bool Cadastrar();
 
-        string Consultar();
+        string Consultar(string Path);
     }
 }

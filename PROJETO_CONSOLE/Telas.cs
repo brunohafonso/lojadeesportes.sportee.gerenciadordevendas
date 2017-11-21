@@ -9,7 +9,7 @@ namespace PROJETO_CONSOLE
     public class Telas
     {
 
-         public  static void CadastrarProduto()
+        public static void CadastrarProduto()
         {
             string opcao = "";
             //Laço de controle de opção de escolha de produto
