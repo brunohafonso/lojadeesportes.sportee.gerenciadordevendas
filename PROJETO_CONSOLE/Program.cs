@@ -47,7 +47,7 @@ namespace PROJETO_CONSOLE {
                     CadastrarProduto();
                     break;
                 case "3":
-                    //CadastarFornecedor ();
+                    Telas.CadastrarFonercedor();
                     break;
                 case "4":
                     //ConsultarCadastro ();

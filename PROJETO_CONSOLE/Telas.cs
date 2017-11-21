@@ -121,5 +121,91 @@ namespace PROJETO_CONSOLE
                             System.Console.WriteLine("erro ao cadastrar produto.");
         }
     }
+	
+	public  static void CadastrarFonercedor()
+        {
+            
+
+              string RazaoSocial=null,Email=null,Produto=null,Telefone=null,CNPJ=null;
+              Endereco FornecedorEnd=new Endereco();
+
+               System.Console.WriteLine("**  CADASTRO DE FORNECEDOR **\n");
+               
+               
+               //RAZÃO SOCIAL
+               while(RazaoSocial==null)
+               {
+               
+               System.Console.WriteLine("Favor digite a Razão Social do Fornecedor");
+               RazaoSocial=Console.ReadLine();
+
+               }
+
+
+               //CNPJ
+               while(CNPJ==null)
+               {
+                 System.Console.WriteLine("Favor digite o CNPJ do Fornecedor");
+                 CNPJ=Console.ReadLine();
+               }
+
+
+              //LOGRADOURO
+                while(FornecedorEnd.Logradouro==null)
+               {
+                 System.Console.WriteLine("Favor digite o Logradouro do Fornecedor");
+                 FornecedorEnd.Logradouro=Console.ReadLine();
+               }
+
+
+              //NUMERO
+               while(FornecedorEnd.Numero==null)
+               {
+               System.Console.WriteLine("Favor digite o Número do Logradouro");
+               FornecedorEnd.Numero=Console.ReadLine();
+
+               }
+
+
+               //Complemento
+               while(FornecedorEnd.Complemento==null)
+               {
+               System.Console.WriteLine("Favor digite o Complemento do Logradouro");
+               FornecedorEnd.Complemento=Console.ReadLine();
+               }
+
+
+              //Cep
+              while(FornecedorEnd.Cep==null)
+               {
+               System.Console.WriteLine("Favor digite o Complemento do Logradouro");
+               FornecedorEnd.Cep=Console.ReadLine();
+               }
+
+               //EMAIL
+               while(Email==null)
+               {
+               System.Console.WriteLine("Favor digite o Email do Fornecedor");
+               Email=Console.ReadLine();
+               }
+
+                //PRODUTO
+                while(Produto==null)
+               {
+               System.Console.WriteLine("Favor digite o Produto do Fornecedor");
+               Produto=Console.ReadLine();
+               }
+
+               //TELEFONE
+                while(Telefone==null)
+               {
+               System.Console.WriteLine("Favor digite o Telefone do Fornecedor");
+               Telefone=Console.ReadLine();
+               }
+
+               Fornecedor FornecedorAtual=new Fornecedor(RazaoSocial,CNPJ,FornecedorEnd,Email,Telefone,Produto);
+               FornecedorAtual.Cadastrar();
+         }
+
   }
 }
