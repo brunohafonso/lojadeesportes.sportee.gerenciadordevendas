@@ -42,13 +42,20 @@ namespace PROJETO_CONSOLE {
 
             switch (opcao) {
                 case "1":
-                    Telas.CadastrarVestuario();
+                    Telas.CadastrarCliente();
+                    PessoaFisica Pessoa=new PessoaFisica();
+                    Pessoa.Consultar();
+
                     break;
                 case "2":
                     Telas.CadastrarProduto();
+                    
+
                     break;
                 case "3":
                     Telas.CadastrarFonercedor();
+                    Fornecedor Pesquisa=new Fornecedor();
+                    Pesquisa.Consultar();
                     break;
                 case "4":
                     //ConsultarCadastro ();
