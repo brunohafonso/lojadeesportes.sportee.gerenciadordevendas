@@ -46,7 +46,11 @@ namespace DOMINIO.ClassePai.ClasseFilha
 
         public string Consultar()
         {
-            throw new NotImplementedException();
+            string[] linhas = File.ReadAllLines(@"..\REPOSITORIO\material-esportivo.csv");
+            foreach(var linha in linhas ) {
+                System.Console.WriteLine(linha.Replace(";", " "));
+            }
+            return "";
         }
 
         /*public override string ConsultarProduto(int Id)

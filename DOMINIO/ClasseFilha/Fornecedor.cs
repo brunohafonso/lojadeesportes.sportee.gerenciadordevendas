@@ -37,9 +37,13 @@ namespace DOMINIO.ClasseFilha
            return false;
         }
 
-        public string Consultar(string Path)
+        public string Consultar()
         {
-            
+            string[] linhas = File.ReadAllLines(@"..\REPOSITORIO\Fornecedores.csv");
+            foreach(var linha in linhas ) {
+                System.Console.WriteLine(linha.Replace(";", " "));
+            }
+            return "";
         }
     }
 }

@@ -49,31 +49,11 @@ namespace DOMINIO.ClasseFilha
 
         public string Consultar()
         {
-            string resultado = "";
-            StreamReader ler = null;
-
-            try
-            {
-                ler = new StreamReader(@"..\REPOSITORIO\Vestuario.csv", Encoding.Default);
-                string linha = "";
-                while((linha = ler.ReadLine()) != null){
-                    string[] dados = linha.Split(';');
-                    if(dados[0] == Convert.ToString(Id)){
-                        resultado = linha;
-                        break;
-                    }
-                }
+            string[] linhas = File.ReadAllLines(@"..\REPOSITORIO\Vestuario.csv");
+            foreach(var linha in linhas ) {
+                System.Console.WriteLine(linha.Replace(";", " "));
             }
-            catch (Exception ex)
-            {
-                
-                 resultado = "Erro ao tentar ler o arquivo." + ex.Message;
-            }
-
-             finally{
-                ler.Close();
-            }
-            return resultado;
+            return "";
         }
     }
 }
