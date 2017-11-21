@@ -10,6 +10,7 @@ namespace DOMINIO.ClasseFilha
            
 
         private string Produto;
+        
         public Fornecedor()
         {
             
@@ -26,20 +27,41 @@ namespace DOMINIO.ClasseFilha
           base.Email = Email;
           base.Telefone = Telefone;
           this.Produto = Produto;
+          
 
         }
     
 
         public bool Cadastrar()
         {
-
+              
+          bool Resposta=false;
+           try
+           {
            StreamWriter SalvarFornecedor = new StreamWriter(@"..\REPOSITORIO\Fornecedores.csv",true);
-           return false;
+           SalvarFornecedor.Write(RazaoSocial+";");
+           SalvarFornecedor.Write(CNPJ+";");
+           SalvarFornecedor.Write(Endereco+";");
+           SalvarFornecedor.Write(Email+";");
+           SalvarFornecedor.Write(Telefone+";");
+           SalvarFornecedor.WriteLine(Produto+";");
+           SalvarFornecedor.Close();
+           Resposta=true;
+
+           }
+           catch
+           {
+          
+           System.Console.WriteLine("Ocorreu um erro ao tentar Salvar!");
+
+           }
+
+           return Resposta;
         }
 
-        public string Consultar(string Path)
+        public string Consultar()
         {
-            
+            throw new System.NotImplementedException();
         }
     }
 }
