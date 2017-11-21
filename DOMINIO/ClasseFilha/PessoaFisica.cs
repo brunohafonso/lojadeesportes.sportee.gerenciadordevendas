@@ -31,7 +31,7 @@ namespace DOMINIO.ClasseFilha
             
 
            bool Cadastro=false;
-            StreamWriter SalvaClientes=new StreamWriter(@"..\REPOSITORIO\Fornecedores.csv",true);
+            StreamWriter SalvaClientes=new StreamWriter(@"..\REPOSITORIO\PessoaFisica.csv",true);
             try
             {
               SalvaClientes.Write(Nome+";");
