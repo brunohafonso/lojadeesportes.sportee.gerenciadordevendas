@@ -1,6 +1,7 @@
 
 using DOMINIO.ClassePai;
 using System.IO;
+using System;
 
 namespace DOMINIO.ClasseFilha
 {
@@ -50,10 +51,25 @@ namespace DOMINIO.ClasseFilha
             }
            return Cadastro;
         }
-
-        public string Consultar()
+          public string Consultar()
         {
-            throw new System.NotImplementedException();
+            string resultado;
+            try
+            {
+                string[] linhas = File.ReadAllLines(@"..\REPOSITORIO\PessoaFisica.csv");
+                foreach (var linha in linhas)
+                {
+                    System.Console.WriteLine(linha.Replace(";", " "));
+                }
+                resultado = "Consulta Realizada com sucesso.";
+            }
+            catch (Exception ex)
+            {
+                resultado = "Nao foi possivel ler o arquivo." + ex.Message;
+            } finally {
+
+            }
+            return resultado;
         }
     }
 }
