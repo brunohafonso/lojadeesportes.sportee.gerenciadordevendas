@@ -2,7 +2,7 @@ namespace DOMINIO
 {
     interface IAcao
     {
-        string Cadastrar();
+        bool Cadastrar();
 
         string Consultar();
     }

@@ -6,9 +6,5 @@ namespace DOMINIO.ClassePai
         protected string Nome { get; set; }
         protected string Descricao { get; set; }
         protected double Preco { get; set; }
- 
     }
-
-   
-
 }

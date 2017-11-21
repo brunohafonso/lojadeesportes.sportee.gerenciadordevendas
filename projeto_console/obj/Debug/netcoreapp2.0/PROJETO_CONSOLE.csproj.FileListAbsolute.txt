@@ -18,3 +18,19 @@ C:\Users\55349862120\Documents\lojadeesportes.sportee.gerenciadordevendas_bak\pr
 C:\Users\55349862120\Documents\lojadeesportes.sportee.gerenciadordevendas_bak\projeto_console\obj\Debug\netcoreapp2.0\PROJETO_CONSOLE.AssemblyInfo.cs
 C:\Users\55349862120\Documents\lojadeesportes.sportee.gerenciadordevendas_bak\projeto_console\obj\Debug\netcoreapp2.0\PROJETO_CONSOLE.dll
 C:\Users\55349862120\Documents\lojadeesportes.sportee.gerenciadordevendas_bak\projeto_console\obj\Debug\netcoreapp2.0\PROJETO_CONSOLE.pdb
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\bin\Debug\netcoreapp2.0\PROJETO_CONSOLE.deps.json
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\bin\Debug\netcoreapp2.0\PROJETO_CONSOLE.runtimeconfig.json
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\bin\Debug\netcoreapp2.0\PROJETO_CONSOLE.runtimeconfig.dev.json
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\bin\Debug\netcoreapp2.0\PROJETO_CONSOLE.dll
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\bin\Debug\netcoreapp2.0\PROJETO_CONSOLE.pdb
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\bin\Debug\netcoreapp2.0\DOMINIO.dll
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\bin\Debug\netcoreapp2.0\REPOSITORIO.dll
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\bin\Debug\netcoreapp2.0\UTIL.dll
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\bin\Debug\netcoreapp2.0\DOMINIO.pdb
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\bin\Debug\netcoreapp2.0\REPOSITORIO.pdb
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\bin\Debug\netcoreapp2.0\UTIL.pdb
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\obj\Debug\netcoreapp2.0\PROJETO_CONSOLE.csproj.CoreCompileInputs.cache
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\obj\Debug\netcoreapp2.0\PROJETO_CONSOLE.AssemblyInfoInputs.cache
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\obj\Debug\netcoreapp2.0\PROJETO_CONSOLE.AssemblyInfo.cs
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\obj\Debug\netcoreapp2.0\PROJETO_CONSOLE.dll
+C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\PROJETO_CONSOLE\obj\Debug\netcoreapp2.0\PROJETO_CONSOLE.pdb

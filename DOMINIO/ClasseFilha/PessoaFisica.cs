@@ -1,8 +1,11 @@
-namespace DOMINIO.ClassePai.ClasseFilha
+
+using DOMINIO.ClassePai;
+
+namespace DOMINIO.ClasseFilha
 {
-    public class PessoaFisica : Pessoa,IAcao
+    public class PessoaFisica : Pessoa
     {
-        private string Nome { get; set; }
+        private  string Nome { get; set; }
         private string CPF { get; set; }
 
         public PessoaFisica()
@@ -17,16 +20,6 @@ namespace DOMINIO.ClassePai.ClasseFilha
            base.Endereco = Endereco;
            base.Email = Email;
            base.Telefone = Telefone; 
-        }
-
-        public string Cadastrar() 
-        {
-            return null;
-        }
-
-        public string Consultar()
-        {
-            return null;
         }
     }
 }
