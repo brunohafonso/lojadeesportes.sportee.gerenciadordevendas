@@ -49,11 +49,23 @@ namespace DOMINIO.ClasseFilha
 
         public string Consultar()
         {
-            string[] linhas = File.ReadAllLines(@"..\REPOSITORIO\Vestuario.csv");
-            foreach(var linha in linhas ) {
-                System.Console.WriteLine(linha.Replace(";", " "));
+            string resultado;
+            try
+            {
+                string[] linhas = File.ReadAllLines(@"..\REPOSITORIO\Vestuario.csv");
+                foreach (var linha in linhas)
+                {
+                    System.Console.WriteLine(linha.Replace(";", " "));
+                }
+                resultado = "Consulta Realizada com sucesso.";
             }
-            return "";
+            catch (Exception ex)
+            {
+                resultado = "Nao foi possivel ler o arquivo." + ex.Message;
+            } finally {
+
+            }
+            return resultado;
         }
     }
 }

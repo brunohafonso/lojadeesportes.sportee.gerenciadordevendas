@@ -7,9 +7,9 @@ namespace PROJETO_CONSOLE {
         
         static void Main (string[] args) 
         {
-            //MenuPrincipal();  
-            Fornecedor fornecedor = new Fornecedor();
-            fornecedor.Consultar();          
+            MenuPrincipal();  
+            //Vestuario vestuario = new Vestuario();
+            //vestuario.Consultar();          
         }
 
         public static void Linha()
