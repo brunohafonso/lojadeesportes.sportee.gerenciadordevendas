@@ -61,7 +61,7 @@ namespace DOMINIO.ClassePai.ClasseFilha
                     string[] dados = linha.Split(';');
                     if(dados[0] == Convert.ToString(Id)){
                         resultado = linha;
-                        break;
+                        break; 
                     }
                     
                 }
