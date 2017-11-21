@@ -177,30 +177,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bruno afonso\\.nuget\\packages\\": {},
+    "C:\\Users\\44063076806\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bruno afonso\\Desktop\\projeto_sportee\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj",
+      "projectUniqueName": "C:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj",
       "projectName": "DOMINIO",
-      "projectPath": "C:\\Users\\bruno afonso\\Desktop\\projeto_sportee\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj",
-      "packagesPath": "C:\\Users\\bruno afonso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bruno afonso\\Desktop\\projeto_sportee\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\obj\\",
+      "projectPath": "C:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\DOMINIO.csproj",
+      "packagesPath": "C:\\Users\\44063076806\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\44063076806\\backend\\lojadeesportes.sportee.gerenciadordevendas\\DOMINIO\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\bruno afonso\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\44063076806\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "C:\\Program Files\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
