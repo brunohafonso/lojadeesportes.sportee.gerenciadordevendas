@@ -42,7 +42,7 @@ namespace PROJETO_CONSOLE {
 
             switch (opcao) {
                 case "1":
-                    //CadastrarCliente();
+                    Telas.CadastrarVestuario();
                     break;
                 case "2":
                     Telas.CadastrarProduto();
