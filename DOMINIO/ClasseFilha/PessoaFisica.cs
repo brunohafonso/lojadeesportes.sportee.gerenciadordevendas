@@ -1,9 +1,10 @@
 
 using DOMINIO.ClassePai;
+using System.IO;
 
 namespace DOMINIO.ClasseFilha
 {
-    public class PessoaFisica : Pessoa
+    public class PessoaFisica : Pessoa,IAcao
     {
         private  string Nome { get; set; }
         private string CPF { get; set; }
@@ -20,6 +21,39 @@ namespace DOMINIO.ClasseFilha
            base.Endereco = Endereco;
            base.Email = Email;
            base.Telefone = Telefone; 
+        }
+
+
+
+
+        public bool Cadastrar()
+        {
+            
+
+           bool Cadastro=false;
+            StreamWriter SalvaClientes=new StreamWriter(@"..\REPOSITORIO\Fornecedores.csv",true);
+            try
+            {
+              SalvaClientes.Write(Nome+";");
+              SalvaClientes.Write(CPF+";");
+              SalvaClientes.Write(Endereco+";");
+              SalvaClientes.Write(Email+";");
+              SalvaClientes.WriteLine(Telefone+";");
+              SalvaClientes.Close();
+              Cadastro=true;
+            }
+            catch
+            {
+
+            System.Console.WriteLine("Ocorreu um erro ao Salvar os arquivos");
+
+            }
+           return Cadastro;
+        }
+
+        public string Consultar()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
