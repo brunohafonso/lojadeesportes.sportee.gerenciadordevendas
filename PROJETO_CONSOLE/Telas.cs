@@ -290,12 +290,7 @@ namespace PROJETO_CONSOLE
                 Email = Console.ReadLine();
             }
 
-            //PRODUTO
-            while (Produto == null)
-            {
-                System.Console.WriteLine("Favor digite o Produto do Fornecedor");
-                Produto = Console.ReadLine();
-            }
+        
 
             //TELEFONE
             while (Telefone == null)
@@ -304,8 +299,9 @@ namespace PROJETO_CONSOLE
                 Telefone = Console.ReadLine();
             }
 
-            Fornecedor FornecedorAtual = new Fornecedor(RazaoSocial, CNPJ, FornecedorEnd, Email, Telefone, Produto);
-            FornecedorAtual.Cadastrar();
+             PessoaFisica PessoaAtual = new PessoaFisica(Nome, CPF, ClienteEnd, Email, Telefone);
+             PessoaAtual.Cadastrar();
+             
         }
     }
 }

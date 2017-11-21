@@ -61,15 +61,11 @@ namespace DOMINIO.ClasseFilha
 
         public string Consultar()
         {
-<<<<<<< HEAD
             string[] linhas = File.ReadAllLines(@"..\REPOSITORIO\Fornecedores.csv");
             foreach(var linha in linhas ) {
                 System.Console.WriteLine(linha.Replace(";", " "));
             }
             return "";
-=======
-            throw new System.NotImplementedException();
->>>>>>> fc75cde79472d957928bf1dc2e4bd6ef30ec1ced
         }
     }
 }
