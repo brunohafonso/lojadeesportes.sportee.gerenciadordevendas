@@ -15,7 +15,7 @@ namespace DOMINIO.ClasseFilha
 
         }
 
-        public Vestuario(int id, string Nome, string Descricao, double Preco, string Tamanho , string Cor)
+        public Vestuario(string Nome, string Descricao, double Preco, string Tamanho , string Cor)
         {
             base.Id = Id;
             base.Nome = Nome;
@@ -29,15 +29,32 @@ namespace DOMINIO.ClasseFilha
         {
             bool cadastrado;
             StreamWriter arquivo = null;
+             
+
+             int Id1;
+
+             try{
+             string[] linhas = File.ReadAllLines(@"..\REPOSITORIO\Vestuario.csv");
+             Id1= linhas.Length;
+             Id1++;
+
+             }
+             catch
+             {
+                Id1=0;
+
+             }
 
             try
             {
                 arquivo = new StreamWriter(@"..\REPOSITORIO\Vestuario.csv", true);
-                arquivo.WriteLine(Id + ";" + Nome + ";" + Descricao + ";" + Preco + ";" + Tamanho + ";" + Cor);
+                arquivo.WriteLine(Id1 + ";" + Nome + ";" + Descricao + ";" + Preco + ";" + Tamanho + ";" + Cor);
             }
-            catch (Exception ex){
+            catch (Exception ex)
+            {
+               cadastrado = false;
                 throw new Exception("Erro ao tentar gravar o arquivo." + ex.Message);
-                cadastrado = false;
+                
             }
             finally
             {
@@ -49,22 +66,31 @@ namespace DOMINIO.ClasseFilha
 
         public string Consultar()
         {
-            string resultado;
+            string resultado = "";
+            StreamReader ler = null;
+
             try
             {
-                string[] linhas = File.ReadAllLines(@"..\REPOSITORIO\Vestuario.csv");
-                foreach (var linha in linhas)
-                {
-                    System.Console.WriteLine(linha.Replace(";", " "));
+                ler = new StreamReader(@"..\REPOSITORIO\Vestuario.csv", Encoding.Default);
+                string linha = "";
+                while((linha = ler.ReadLine()) != null){
+                    string[] dados = linha.Split(';');
+                    if(dados[0] == Convert.ToString(Id)){
+                        resultado = linha;
+                        break;
+                    }
                 }
-                resultado = "Consulta Realizada com sucesso.";
             }
             catch (Exception ex)
             {
-                resultado = "Nao foi possivel ler o arquivo." + ex.Message;
-            } finally {
-
+                
+                 resultado = "Erro ao tentar ler o arquivo." + ex.Message;
             }
+
+             finally{
+                ler.Close();
+            }
+
             return resultado;
         }
     }

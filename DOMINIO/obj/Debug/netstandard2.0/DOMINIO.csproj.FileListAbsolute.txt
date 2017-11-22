@@ -6,11 +6,11 @@ C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciador
 C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\bin\Debug\netstandard2.0\DOMINIO.pdb
 C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.dll
 C:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.pdb
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\bin\Debug\netstandard2.0\DOMINIO.deps.json
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\bin\Debug\netstandard2.0\DOMINIO.dll
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\bin\Debug\netstandard2.0\DOMINIO.pdb
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.csproj.CoreCompileInputs.cache
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.AssemblyInfoInputs.cache
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.AssemblyInfo.cs
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.dll
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.pdb
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\DOMINIO\bin\Debug\netstandard2.0\DOMINIO.deps.json
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\DOMINIO\bin\Debug\netstandard2.0\DOMINIO.dll
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\DOMINIO\bin\Debug\netstandard2.0\DOMINIO.pdb
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.csproj.CoreCompileInputs.cache
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.AssemblyInfoInputs.cache
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.AssemblyInfo.cs
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.dll
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\DOMINIO\obj\Debug\netstandard2.0\DOMINIO.pdb

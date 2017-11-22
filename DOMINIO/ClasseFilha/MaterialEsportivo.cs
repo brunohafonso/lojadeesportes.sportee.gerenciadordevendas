@@ -1,8 +1,9 @@
 using System;
 using System.IO;
 using System.Text;
+using DOMINIO.ClassePai;
 
-namespace DOMINIO.ClassePai.ClasseFilha
+namespace DOMINIO.ClasseFilha
 {
     public class MaterialEsportivo : Produto, IAcao
     {
@@ -12,8 +13,7 @@ namespace DOMINIO.ClassePai.ClasseFilha
         }
 
 
-        public MaterialEsportivo(int id, string Nome, string Descricao, double Preco, string Modalidade){
-            base.Id = Id;
+        public MaterialEsportivo(string Nome, string Descricao, double Preco, string Modalidade){
             base.Nome = Nome;
             base.Descricao = Descricao;
             base.Preco = Preco;
@@ -24,16 +24,31 @@ namespace DOMINIO.ClassePai.ClasseFilha
         {
             bool cadastrado;
             StreamWriter arquivo = null;
+             
+             int Id1;
+
+             try{
+             string[] linhas = File.ReadAllLines(@"..\REPOSITORIO\material-esportivo.csv");
+             Id1= linhas.Length;
+             Id1++;
+
+             }
+             catch
+             {
+                Id1=0;
+
+             }
 
             try
             {
                 arquivo = new StreamWriter(@"..\REPOSITORIO\material-esportivo.csv", true);
-                arquivo.WriteLine(Id + ";" + Nome + ";" + Descricao + ";" + Preco + ";" + Modalidade);
+                arquivo.WriteLine(Id1 + ";" + Nome + ";" + Descricao + ";" + Preco + ";" + Modalidade);
                 cadastrado = true;
             }
             catch (Exception ex){
-                throw new Exception("Erro ao tentar gravar o arquivo." + ex.Message);
                 cadastrado = false;
+                throw new Exception("Erro ao tentar gravar o arquivo." + ex.Message);
+                
             }
             finally
             {
@@ -69,7 +84,6 @@ namespace DOMINIO.ClassePai.ClasseFilha
         {
             string resultado = "";
             StreamReader ler = null;
-
             try
             {
                 ler = new StreamReader(@"..\REPOSITORIO\material-esportivo.csv", Encoding.Default);
@@ -88,14 +102,11 @@ namespace DOMINIO.ClassePai.ClasseFilha
                 
                  resultado = "Erro ao tentar ler o arquivo." + ex.Message;
             }
-
              finally{
                 ler.Close();
             }
-
             return resultado;
         }
-
         public string Consultar()
         {
             throw new NotImplementedException();

@@ -1,4 +1,3 @@
-
 using DOMINIO.ClassePai;
 using System.IO;
 using System;
@@ -37,11 +36,15 @@ namespace DOMINIO.ClasseFilha
             {
               SalvaClientes.Write(Nome+";");
               SalvaClientes.Write(CPF+";");
-              SalvaClientes.Write(Endereco+";");
+              SalvaClientes.Write(Endereco.Logradouro+";");
+              SalvaClientes.Write(Endereco.Numero+";");
+              SalvaClientes.Write(Endereco.Complemento+";");
+              SalvaClientes.Write(Endereco.Cep+";");
               SalvaClientes.Write(Email+";");
               SalvaClientes.WriteLine(Telefone+";");
               SalvaClientes.Close();
               Cadastro=true;
+              System.Console.WriteLine("Cadastro Realizado com sucesso!");
             }
             catch
             {

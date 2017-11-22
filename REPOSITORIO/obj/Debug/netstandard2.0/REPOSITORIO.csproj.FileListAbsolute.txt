@@ -6,11 +6,11 @@ c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciador
 c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.AssemblyInfo.cs
 c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.dll
 c:\Users\bruno afonso\Desktop\projeto_sportee\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.pdb
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\bin\Debug\netstandard2.0\REPOSITORIO.deps.json
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\bin\Debug\netstandard2.0\REPOSITORIO.dll
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\bin\Debug\netstandard2.0\REPOSITORIO.pdb
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.csproj.CoreCompileInputs.cache
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.AssemblyInfoInputs.cache
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.AssemblyInfo.cs
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.dll
-C:\Users\44063076806\backend\lojadeesportes.sportee.gerenciadordevendas\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.pdb
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\REPOSITORIO\bin\Debug\netstandard2.0\REPOSITORIO.deps.json
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\REPOSITORIO\bin\Debug\netstandard2.0\REPOSITORIO.dll
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\REPOSITORIO\bin\Debug\netstandard2.0\REPOSITORIO.pdb
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.csproj.CoreCompileInputs.cache
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.AssemblyInfoInputs.cache
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.AssemblyInfo.cs
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.dll
+C:\Users\lalvess\Desktop\ProjetoEsporte-master\REPOSITORIO\obj\Debug\netstandard2.0\REPOSITORIO.pdb

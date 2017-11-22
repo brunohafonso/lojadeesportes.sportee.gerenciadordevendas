@@ -40,9 +40,13 @@ namespace DOMINIO.ClasseFilha
             try
             {
                 StreamWriter SalvarFornecedor = new StreamWriter(@"..\REPOSITORIO\Fornecedores.csv", true);
+               
                 SalvarFornecedor.Write(RazaoSocial + ";");
                 SalvarFornecedor.Write(CNPJ + ";");
-                SalvarFornecedor.Write(Endereco + ";");
+                SalvarFornecedor.Write(Endereco.Logradouro + ";");
+                SalvarFornecedor.Write(Endereco.Numero + ";");
+                SalvarFornecedor.Write(Endereco.Complemento + ";");
+                SalvarFornecedor.Write(Endereco.Cep + ";");
                 SalvarFornecedor.Write(Email + ";");
                 SalvarFornecedor.Write(Telefone + ";");
                 SalvarFornecedor.WriteLine(Produto + ";");

@@ -1,3 +1,4 @@
+
 using System;
 using System.IO;
 using DOMINIO.ClassePai;
@@ -8,6 +9,156 @@ namespace PROJETO_CONSOLE
 {
     public class Telas
     {
+
+        public static void Linha()
+        {
+            Console.Write("======================================================");
+        }
+
+
+
+
+
+
+          public static void MenuPrincipal() 
+        {
+            string opcao = "";
+                Linha();
+                Console.WriteLine ();
+                Console.WriteLine ();
+                Console.WriteLine ("    SISTEMA SPORTEE     ");
+                Console.WriteLine ();
+                Console.WriteLine ("    Digite a opção:");
+                Console.WriteLine ();
+                Console.WriteLine ("    1 - Cadastrar Cliente");
+                Console.WriteLine ("    2 - Cadastrar Produto");
+                Console.WriteLine ("    3 - Cadastrar Fornecedor");
+                Console.WriteLine ("    4 - Consultar Cadastro");
+                Console.WriteLine ("    5 - Venda");
+                Console.WriteLine ("    9 - Sair");
+                Console.WriteLine ();
+                Linha();
+                //Recebe opção do Cliente
+                Console.WriteLine ();
+                Console.Write ("Opção: ");
+                opcao = Console.ReadLine ();
+
+            switch (opcao) {
+                case "1":
+                   //Chama o método que solicita os dados do cliente e depois os salva
+                    CadastrarCliente();
+                  //Chama o método do menu principal
+                    MenuPrincipal();
+                    
+
+                    break;
+                case "2":
+                //Chama o método que solicita os dados do produto e depois os salva
+                    CadastrarProduto();
+                    //Chama o método do menu principal
+                    MenuPrincipal();
+
+                    break;
+                case "3":
+                    
+                    //Chama o método que solicita os dados do fornecedor e depois os salva
+                    CadastrarFonercedor();
+                   //Chama o método do menu principal
+                    MenuPrincipal();
+                    break;
+
+                case "4":
+                    //ConsultarCadastro ();
+                    break;
+
+                case "5":
+                    RealizaVenda();
+                    MenuPrincipal();
+                    break;
+                case "9":
+                    Environment.Exit(1);
+                break;
+                default:
+                    MenuPrincipal();
+                break;
+            }
+        }
+
+           
+
+
+   public static void  RealizaVenda()
+   {
+         string opcao="";
+         bool controla=false;
+          Linha();
+        int escolha=0;
+          System.Console.WriteLine("\n  Vendas \n");
+          Linha();
+
+          System.Console.WriteLine("\n Escolha o Tipo de Produto");
+          Console.WriteLine("  1 - Vestuario ");
+            Console.WriteLine("2 - Material Esportivo ");
+            Console.WriteLine("3 - Voltar ");
+            
+
+            Console.Write("Opção: ");
+            opcao = Console.ReadLine();
+
+            switch (opcao)
+            {
+                case "1":
+                    Vestuario vestuariovenda = new Vestuario();
+                    vestuariovenda.Consultar();
+                    while(controla=false)
+                    {
+                        try
+                        {
+                    System.Console.WriteLine("Escolha o Produto por ID:");
+                    escolha=Int32.Parse(Console.ReadLine());
+                    controla=true;
+                        }
+                        catch
+                        {
+                             System.Console.WriteLine("O sistema apenas aceita números"); 
+                        }
+                    }
+
+                    break;
+                case "2":
+                    controla=false;
+
+                    MaterialEsportivo esportivovenda = new MaterialEsportivo();
+                    esportivovenda.Consultar();
+                   
+                    while(controla=false)
+                    {
+                        try
+                        {
+                         System.Console.WriteLine("Escolha o Produto por ID:");
+                         escolha=Int32.Parse(Console.ReadLine());
+                         controla=true;
+                        }
+                        catch
+                        {
+                             System.Console.WriteLine("O sistema apenas aceita números"); 
+                        }
+                    }
+
+                    break;
+                case "3":
+                    MenuPrincipal();
+                    break;
+                default:
+                    RealizaVenda();
+                    break;
+            }
+           
+          
+
+   }
+
+
 
         public static void CadastrarProduto()
         {
@@ -30,55 +181,112 @@ namespace PROJETO_CONSOLE
             switch (opcao)
             {
                 case "1":
+                    
                     CadastrarVestuario();
-
-
                     break;
                 case "2":
-                    Console.WriteLine("Cadastro de Material Esportivo");
-                    Console.WriteLine();
-                    Console.Write("Informe o Código: ");
-                    int Id = int.Parse(Console.ReadLine());
-
-                    Console.Write("Informe o Nome: ");
-                    string Nome = Console.ReadLine();
-
-                    Console.Write("Informe a Descrição: ");
-                    string Descricao = Console.ReadLine();
-
-                    Console.Write("Informe o Preço: ");
-                    double Preco = double.Parse(Console.ReadLine());
-
-                    Console.Write("Modalidade: ");
-                    string Modalidade = Console.ReadLine();
+                    CadastrarMaterialEsportivo();
                     break;
                 case "3":
-
+                    MenuPrincipal();
                     break;
                 default:
                     CadastrarProduto();
                     break;
             }
         }
+
+
+
+
+public static void CadastrarMaterialEsportivo()
+        {
+
+          Linha();
+
+          System.Console.WriteLine("\n Cadastro de Material Esportivo \n");
+          Linha();
+                    
+                    string Nome="",Descricao="",Modalidade="";
+                    double Preco=0;
+                    bool controla=false;
+                   
+                   
+
+
+
+                    //Nome
+                    //fica no loop até o nome ser preenchido
+                    while(Nome=="")
+                    {
+                    Console.Write("\nInforme o Nome:");
+                      Nome = Console.ReadLine();
+                    }
+
+                    //Nome
+                    //fica no loop até a descricao ser preenchida
+                    while(Descricao=="")
+                    {
+                    Console.Write("Informe a Descrição: ");
+                      Descricao = Console.ReadLine();
+                    }
+                    
+
+                    // deixa a controla como false
+                    controla=false;
+                    //fica no loop até o valor ser inserido como numerico
+                    while(controla==false) 
+                    {
+                        //tenta converter
+                        try
+                        {
+                        Console.Write("Informe o Preço do Produto: ");
+                        Preco = int.Parse(Console.ReadLine());
+                        controla=true;
+                        }
+                        catch
+                        {
+
+                            System.Console.WriteLine("Favor Digite o preco corretamente. OBS o campo aceita apenas números!");
+                        }
+                    }
+
+
+                    while(Modalidade=="")
+                    {
+                    Console.Write("Modalidade: ");
+                    Modalidade = Console.ReadLine();
+                    }
+
+                    MaterialEsportivo MaterialAtual=new MaterialEsportivo(Nome,Descricao,Preco,Modalidade);
+                    MaterialAtual.Cadastrar();
+        }
+
+
+
+
+
+
+            //Cadastro de vestuario
         public static void CadastrarVestuario()
         {
 
-            int Id;
+            int Id=0;
             string Descricao, Tamanho, Cor;
-            double Preco;
+            double Preco=0;
+            bool opcao=false;
 
             Console.WriteLine("Cadastro de Vestuário");
             Console.WriteLine();
-            Console.Write("Informe o Código: ");
-            try
-            {
-                Id = int.Parse(Console.ReadLine());
-            }
-            catch
-            {
-                Console.Write("Informe o Codigo novamente, codigo invalido: ");
-                Id = int.Parse(Console.ReadLine());
-            }
+            
+           
+
+           
+          
+
+
+             // SOLICITA O PRODUTO
+
             Console.Write("Informe o nome do produto: ");
             string Nome = Console.ReadLine();
             while (Nome.Length < 1)
@@ -87,25 +295,40 @@ namespace PROJETO_CONSOLE
                 Nome = Console.ReadLine();
             }
 
+
+
+           //SOLICITA A DESCRIÇÃO
             Console.Write("Informe a Descricao: ");
             Descricao = Console.ReadLine();
-            while (int.Parse(Descricao) < 1)
+            while (Descricao.Length < 1)
             {
                 Console.Write("Informe a Descricao novamente: ");
                 Descricao = Console.ReadLine();
             }
 
+
+
+            //SOLICITA O PREÇO
             Console.Write("Informe o Preco: ");
+            opcao=false;
+             // SE O PRECO NAO FOR IGUAL A DOUBLE FICA NO LAÇO
+            while(opcao==false)
+            {
             try
             {
                 Preco = double.Parse(Console.ReadLine());
+                opcao=true;
             }
             catch
             {
                 Console.Write("Informe o Preco novamente: ");
-                Preco = double.Parse(Console.ReadLine());
+               
+            }
             }
 
+
+
+           //SOLICITA O TAMANHO
             Console.Write("Informe o Tamanho: ");
             Tamanho = Console.ReadLine();
             while (Tamanho.Length < 1)
@@ -114,6 +337,9 @@ namespace PROJETO_CONSOLE
                 Tamanho = Console.ReadLine();
             }
 
+
+
+            //SOLICITA A COR
             Console.Write("Informe a Cor: ");
             Cor = Console.ReadLine();
             while (Cor.Length < 1)
@@ -122,8 +348,12 @@ namespace PROJETO_CONSOLE
                 Cor = Console.ReadLine();
             }
 
-            Vestuario vestuario = new Vestuario(Id, Nome, Descricao, Preco, Tamanho, Cor);
+
+         // CRIA E INSTANCIA O OBJETI vesturario
+            Vestuario vestuario = new Vestuario(Nome, Descricao, Preco, Tamanho, Cor);
+            //Salva o Vestuario
             bool verificador = vestuario.Cadastrar();
+            vestuario.Consultar();
 
             if (verificador)
             {
@@ -134,20 +364,28 @@ namespace PROJETO_CONSOLE
             {
                 System.Console.WriteLine("erro ao cadastrar produto.");
             }
+            
+            vestuario.Consultar();
         }
+           
 
+
+
+
+           
+           //CADASTRO DE FORNECEDORES
         public static void CadastrarFonercedor()
         {
 
 
-            string RazaoSocial = null, Email = null, Produto = null, Telefone = null, CNPJ = null;
+            string RazaoSocial ="", Email ="", Produto ="", Telefone ="", CNPJ ="";
             Endereco FornecedorEnd = new Endereco();
 
             System.Console.WriteLine("**  CADASTRO DE FORNECEDOR **\n");
 
 
             //RAZÃO SOCIAL
-            while (RazaoSocial == null)
+            while (RazaoSocial == "")
             {
 
                 System.Console.WriteLine("Favor digite a Razão Social do Fornecedor");
@@ -157,7 +395,7 @@ namespace PROJETO_CONSOLE
 
 
             //CNPJ
-            while (CNPJ == null)
+            while (CNPJ == "")
             {
                 System.Console.WriteLine("Favor digite o CNPJ do Fornecedor");
                 CNPJ = Console.ReadLine();
@@ -165,7 +403,7 @@ namespace PROJETO_CONSOLE
 
 
             //LOGRADOURO
-            while (FornecedorEnd.Logradouro == null)
+            while (FornecedorEnd.Logradouro == "")
             {
                 System.Console.WriteLine("Favor digite o Logradouro do Fornecedor");
                 FornecedorEnd.Logradouro = Console.ReadLine();
@@ -173,7 +411,7 @@ namespace PROJETO_CONSOLE
 
 
             //NUMERO
-            while (FornecedorEnd.Numero == null)
+            while (FornecedorEnd.Numero == "")
             {
                 System.Console.WriteLine("Favor digite o Número do Logradouro");
                 FornecedorEnd.Numero = Console.ReadLine();
@@ -182,7 +420,7 @@ namespace PROJETO_CONSOLE
 
 
             //Complemento
-            while (FornecedorEnd.Complemento == null)
+            while (FornecedorEnd.Complemento == "")
             {
                 System.Console.WriteLine("Favor digite o Complemento do Logradouro");
                 FornecedorEnd.Complemento = Console.ReadLine();
@@ -190,28 +428,28 @@ namespace PROJETO_CONSOLE
 
 
             //Cep
-            while (FornecedorEnd.Cep == null)
+            while (FornecedorEnd.Cep == "")
             {
-                System.Console.WriteLine("Favor digite o Complemento do Logradouro");
+                System.Console.WriteLine("Favor digite o CEP do Logradouro");
                 FornecedorEnd.Cep = Console.ReadLine();
             }
 
             //EMAIL
-            while (Email == null)
+            while (Email == "")
             {
                 System.Console.WriteLine("Favor digite o Email do Fornecedor");
                 Email = Console.ReadLine();
             }
 
             //PRODUTO
-            while (Produto == null)
+            while (Produto == "")
             {
                 System.Console.WriteLine("Favor digite o Produto do Fornecedor");
                 Produto = Console.ReadLine();
             }
 
             //TELEFONE
-            while (Telefone == null)
+            while (Telefone == "")
             {
                 System.Console.WriteLine("Favor digite o Telefone do Fornecedor");
                 Telefone = Console.ReadLine();
@@ -219,6 +457,7 @@ namespace PROJETO_CONSOLE
 
             Fornecedor FornecedorAtual = new Fornecedor(RazaoSocial, CNPJ, FornecedorEnd, Email, Telefone, Produto);
             FornecedorAtual.Cadastrar();
+            FornecedorAtual.Consultar();
         }
 
 
@@ -227,32 +466,33 @@ namespace PROJETO_CONSOLE
         {
 
 
-            string Nome= null, CPF = null, Email = null, Telefone = null;
+            string Nome= "", CPF = "", Email = "", Telefone = "";
             Endereco ClienteEnd = new Endereco();
 
-            System.Console.WriteLine("**  CADASTRO DE FORNECEDOR **\n");
+            
+            System.Console.WriteLine("\n  CADASTRO DE Cliente \n");
+            Linha();
 
-
-            //RAZÃO SOCIAL
-            while (Nome == null)
+            //Nome do cliente
+            while (Nome == "")
             {
 
-                System.Console.WriteLine("Favor digite o nome do cliente");
+                System.Console.WriteLine("\nFavor digite o nome do cliente");
                 Nome = Console.ReadLine();
 
             }
 
 
-            //CNPJ
-            while (CPF == null)
+            //CPF do cliente
+            while (CPF == "")
             {
                 System.Console.WriteLine("Favor digite o CPF do cliente");
                 CPF = Console.ReadLine();
             }
 
 
-            //LOGRADOURO
-            while (ClienteEnd.Logradouro == null)
+            //Logradouro do cliente
+            while (ClienteEnd.Logradouro == "")
             {
                 System.Console.WriteLine("Favor digite o Logradouro do cliente");
                 ClienteEnd.Logradouro = Console.ReadLine();
@@ -260,7 +500,7 @@ namespace PROJETO_CONSOLE
 
 
             //NUMERO
-            while (ClienteEnd.Numero == null)
+            while (ClienteEnd.Numero == "")
             {
                 System.Console.WriteLine("Favor digite o Número do cliente");
                 ClienteEnd.Numero = Console.ReadLine();
@@ -269,7 +509,7 @@ namespace PROJETO_CONSOLE
 
 
             //Complemento
-            while (ClienteEnd.Complemento == null)
+            while (ClienteEnd.Complemento == "")
             {
                 System.Console.WriteLine("Favor digite o Complemento do cliente");
                 ClienteEnd.Complemento = Console.ReadLine();
@@ -277,14 +517,14 @@ namespace PROJETO_CONSOLE
 
 
             //Cep
-            while (ClienteEnd.Cep == null)
+            while (ClienteEnd.Cep == "")
             {
                 System.Console.WriteLine("Favor digite o cep do cliente");
                 ClienteEnd.Cep = Console.ReadLine();
             }
 
             //EMAIL
-            while (Email == null)
+            while (Email == "")
             {
                 System.Console.WriteLine("Favor digite o Email do cliente");
                 Email = Console.ReadLine();
@@ -293,14 +533,15 @@ namespace PROJETO_CONSOLE
         
 
             //TELEFONE
-            while (Telefone == null)
+            while (Telefone == "")
             {
-                System.Console.WriteLine("Favor digite o Telefone do Fornecedor");
+                System.Console.WriteLine("Favor digite o Telefone do cliente");
                 Telefone = Console.ReadLine();
             }
 
              PessoaFisica PessoaAtual = new PessoaFisica(Nome, CPF, ClienteEnd, Email, Telefone);
              PessoaAtual.Cadastrar();
+             PessoaAtual.Consultar();
              
         }
     }
